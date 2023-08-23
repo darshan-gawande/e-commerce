@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#nav {
+    background-color: #111;
+    color: white;
+    padding: 10px;
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brandName {
+    font-size: 30px;
+    font: weight 100;
+    cursor: pointer;
+}
+
+.searchInput {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.offer {
+    font-size: 20px;
+}
+
+.navBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Item {
+    margin: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.imgItem {
+    height: 100px;
+    position: absolute;
+}
+
+.slider {
+    background-color: url("https: //unsplash.com/photos/QMDap1TAu0g");
+    /* clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 79%); */
+
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 100%;
+}
+
+.sliderItem {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    position: relative;
+}
+
+
+.sliderImg {
+    width: 100vw;
+    height: auto;
+    
+}
+.sliderTitle {
+    position: absolute;
+    color: white;
+    
+    font-size: ;
+
+
+
+}
