@@ -4,6 +4,7 @@ body {
     font-family: 'Lato', sans-serif;
     padding: 0;
     margin: 0;
+    
 }
 
 #nav {
@@ -51,36 +52,98 @@ body {
     position: absolute;
 }
 
+       
 .slider {
-    background-color: url("https: //unsplash.com/photos/QMDap1TAu0g");
-    /* clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 79%); */
-
+    height: 100vh;
 }
 
 .sliderWrapper {
     display: flex;
-    width: 100%;
+   
+
 }
 
 .sliderItem {
+    flex: 0 0 100%;
     display: flex;
-    width: fit-content;
-    align-items: center;
+    text-align: center;
     position: relative;
+    height: 100%;
+    justify-content: center;
+    
 }
-
 
 .sliderImg {
-    width: 100vw;
-    height: auto;
-    
+position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+ 
 }
-.sliderTitle {
+
+.Bg {
     position: absolute;
-    color: white;
-    
-    font-size: ;
+   top: 40%;
+   left: 30%;
+   width: 60%;
+   height: 80%;
+   border-radius: 50%;
+   background-color: yellow;
+   
+}
 
-
+.sliderTitle {
+    color: #111;
+    position: absolute;
+    top: 5%;
+    right: 60%;
+    left: 10%;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
 
 }
+
+.sliderPrice {
+    color: #111;
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    justify-content: center;
+    border: 5px  solid #111;
+    border-radius: 5px;
+    margin:auto;
+    z-index: 1;
+}
+
+.buyItem {
+    color: #111;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.buyItem:hover {
+    background-color: #111;
+    color: white;
+}
+
+
+
+
+
+    
+
+
