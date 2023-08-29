@@ -8,6 +8,10 @@ body {
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #nav {
     background-color: #111;
     color: white;
@@ -51,12 +55,13 @@ body {
 .imgItem {
     height: 100px;
     position: absolute;
+    
+
 }
 
        
 .slider {
     overflow: hidden;
-    
 
 }
 
@@ -76,9 +81,6 @@ body {
 .sliderImg {
  position: relative;
  z-index: 1;
-
-
- 
 }
 
 .Bg {
@@ -199,9 +201,85 @@ body {
     color: rgb(170, 156, 137);
     width: 50%;
     height: 100px;
+}
 
+.products {
+    position: relative;
+    display: flex;
+
+}
+.productImg {
+    width: 50%;
+    height: auto;
+
+}
+.productDetails {
+    margin: auto;
+}
+
+.productTitle {
+    font-size: 50px;
+    font-weight: 900px;
+   
+
+}
+.productPrice {
+    font-size: 30px;
+  
+}
+
+.productDesc {
+    color: rgb(101, 98, 98);
     
 }
+.colors, .sizes {
+    display: flex;
+   
+    
+}
+
+.color {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color:last-child {
+    background-color: rgb(19, 19, 74);
+}
+
+.size {
+    height: 25px;
+    width: 45px;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 10px 10px;
+    border: 1px solid black;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.productButton {
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: whitesmoke;
+    left: 60%;
+
+}
+.productButton:hover {
+    background-color: black;
+    color: white;
+}
+
+
 
 
 
