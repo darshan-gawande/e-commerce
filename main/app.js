@@ -87,6 +87,7 @@ const productTitle = document.querySelector(".productTitle");
 const productPrice = document.querySelector(".productPrice");
 const productColor = document.querySelectorAll(".color");
 const productImg = document.querySelector(".productImg");
+const productSize = document.querySelectorAll(".size");
 
 
 let choosenProduct = products[0];
@@ -115,4 +116,28 @@ productColor.forEach((color, index) => {
     color.addEventListener("click", ()=> {
         productImg.src = choosenProduct.colors[index].img;
     });
+});
+
+productSize.forEach((size, index) => {
+    size.addEventListener("click", ()=> {
+        productSize.forEach((size) => {
+            size.style.backgroundColor = "white";
+             size.style.color = "black";
+        });
+        size.style.backgroundColor = "black";
+        size.style.color = "white";
+    });
+    
+});
+
+const buyButton = document.querySelector(".productButton");
+const close = document.querySelector(".close");
+const payment = document.querySelector(".payment");
+
+buyButton.addEventListener("click", () => {
+    payment.style.display = "flex";
+});
+
+close.addEventListener("click", () => {
+    payment.style.display = "none";
 });
